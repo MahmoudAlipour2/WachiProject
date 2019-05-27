@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.View.LoginActivity"
+    >
+   <LinearLayout
+        android:id="@+id/layout_Login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/log_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="UserName"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/log_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Log in" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/dialog_background"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_CloseBS"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_close_black_24dp" />
+
+            <ImageView
+                android:id="@+id/img_ShareBS"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/ic_share_black_24dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_ResponseBS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:text="Successful"
+            android:textColor="#866868"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_brightness_1_black_24dp" />
+
+            <TextView
+                android:id="@+id/tv_MessageBS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="User is premium "
+                android:textColor="#241616"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+
