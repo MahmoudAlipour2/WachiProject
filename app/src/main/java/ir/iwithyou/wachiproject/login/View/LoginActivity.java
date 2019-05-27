@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import ir.iwithyou.wachiproject.R;
@@ -23,6 +24,8 @@ public class LoginActivity extends AppCompatActivity {
     Button login_btn;
     String userN;
     String passW;
+    TextView tv_ResponseBS;
+    TextView tv_MessageBS;
 
 
     @Override
@@ -38,6 +41,8 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "SHARE TEXT WITH SOCIAL APPLICATION.", Toast.LENGTH_SHORT).show();
         });
 
+
+        //TODO: SET TEXT TV_MESSAGEBS AND TV_RESPONSEBS BY SERVER RESPONSES.
 
 /*        login_btn.setOnClickListener(v -> {
             userN = userName.getText().toString();
@@ -73,6 +78,8 @@ public class LoginActivity extends AppCompatActivity {
         userName = findViewById(R.id.log_UserName);
         password = findViewById(R.id.log_Password);
         login_btn = findViewById(R.id.login_btn);
+        tv_ResponseBS = findViewById(R.id.tv_ResponseBS);
+        tv_MessageBS = findViewById(R.id.tv_MessageBS);
         image_CloseBS = findViewById(R.id.img_CloseBS);
         image_ShareBS = findViewById(R.id.img_ShareBS);
         bottomSheet = findViewById(R.id.layout_bottomSheet);

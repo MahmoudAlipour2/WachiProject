@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login.View.LoginActivity"
+
+
     >
    <LinearLayout
         android:id="@+id/layout_Login"
@@ -15,11 +17,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
-            android:text="Login"
-            android:textAlignment="center"
-            android:textSize="40dp"
-            android:textStyle="bold" />
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:text="Basic Authentication"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
 
 
         <EditText
@@ -27,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:layout_marginRight="20dp"
             android:hint="UserName"
             android:inputType="textEmailAddress" />
@@ -37,26 +41,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:hint="Password"
             android:inputType="textPassword" />
 
         <Button
+            android:background="@drawable/shape_button"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
             android:id="@+id/login_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:text="Log in" />
+            android:layout_marginTop="50dp"
+            android:text="Send" />
 
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/layout_bottomSheet"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="250dp"
         android:layout_gravity="bottom|right"
         android:background="@drawable/dialog_background"
         android:clickable="true"
@@ -94,7 +100,7 @@
             android:layout_marginLeft="75dp"
             android:text="Successful"
             android:textColor="#866868"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -117,9 +123,8 @@
                 android:layout_marginTop="10dp"
                 android:text="User is premium "
                 android:textColor="#241616"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
         </LinearLayout>
-
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
 
