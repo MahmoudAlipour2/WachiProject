@@ -4,11 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login.View.LoginActivity"
+    tools:context=".login.View.LoginActivity">
 
-
-    >
-   <LinearLayout
+    <LinearLayout
         android:id="@+id/layout_Login"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,13 +15,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
             android:layout_marginLeft="20dp"
-            android:text="Basic Authentication"
+            android:layout_marginTop="100dp"
             android:gravity="left"
+            android:text="Basic Authentication"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:textStyle="bold" />
 
 
         <EditText
@@ -47,15 +45,22 @@
             android:inputType="textPassword" />
 
         <Button
-            android:background="@drawable/shape_button"
-            android:textSize="17sp"
-            android:textColor="#ffffff"
             android:id="@+id/login_btn"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:text="Send" />
+            android:background="@drawable/shape_button"
+            android:text="Send"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
 
     </LinearLayout>
 
@@ -112,7 +117,7 @@
                 android:layout_height="15dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginLeft="75dp"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="15dp"
                 android:src="@drawable/ic_brightness_1_black_24dp" />
 
             <TextView
