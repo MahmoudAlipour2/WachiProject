@@ -53,7 +53,6 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "SHARE TEXT WITH SOCIAL APPLICATION.", Toast.LENGTH_SHORT).show();
         });
 
-
         //TODO: SET TEXT TV_MESSAGEBS AND TV_RESPONSEBS BY SERVER RESPONSES.
 
         login_btn.setOnClickListener(v -> {
@@ -91,9 +90,7 @@ public class LoginActivity extends AppCompatActivity {
 
         });
 
-
     }
-
 
     private void init() {
         userName = findViewById(R.id.log_UserName);
