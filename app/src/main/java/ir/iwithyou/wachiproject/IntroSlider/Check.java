@@ -7,8 +7,8 @@ public class Check {
 
     SharedPreferences pref;
     SharedPreferences.Editor editor;
-    Context _context;// shared pref mode
-    int PRIVATE_MODE = 0;// Shared preferences file name
+    Context _context;
+    int PRIVATE_MODE = 0;
     private static final String PREF_NAME = "intro_welcome";private static final String IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch";
 
     public Check(Context context) {
