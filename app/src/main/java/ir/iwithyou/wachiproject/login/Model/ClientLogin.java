@@ -1,16 +1,16 @@
 package ir.iwithyou.wachiproject.login.Model;
 
 
-import ir.iwithyou.wachiproject.pojo.WachiLogin;
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Path;
-import retrofit2.http.Query;
+import retrofit2.http.Header;
+
 
 
 public interface ClientLogin {
 
     @GET(".")
-    Call<WachiLogin> login(@Query("username") String  UserName,@Query("password") String  Password);
+    Call<String>  getStingResponse(@Header("Authorization") String authHeader );
 
 }
